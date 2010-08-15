@@ -1,0 +1,211 @@
+Source: ibus-table-chinese
+Section: utils
+Priority: optional
+Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+Uploaders: Asias He <asias.hejun@gmail.com>, LI Daobing <lidaobing@debian.org>
+Build-Depends: debhelper (>= 7)
+Build-Depends-Indep: autotools-dev, ibus-table (>= 1.3.0), pkg-config
+Standards-Version: 3.9.1
+Homepage: http://code.google.com/p/ibus
+Vcs-Bzr: lp:~pkg-ime/ibus/debian-ibus-table-chinese
+Vcs-Browser: https://code.launchpad.net/~pkg-ime/ibus/debian-ibus-table-chinese
+
+Package: ibus-table-cangjie
+Architecture: all
+Depends: ${misc:Depends}, ibus-table-cangjie3, ibus-table-cangjie5, ibus-table-cangjie-big
+Description: ibus-table input method: CangJie (dummy package)
+ This is a dummy package for safe upgrade.
+ .
+ You can safely remove it from your system.
+
+Package: ibus-table-cangjie3
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: CangJie3
+ This package provide one input method: CaneJie3.
+ .
+ CangJie3 is a Traditional Chinese input method, check more information at
+ http://en.wikipedia.org/wiki/Cangjie_input_method .
+
+Package: ibus-table-cangjie5
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: CangJie5
+ This package provide one input method: CaneJie5.
+ .
+ CangJie5 is a Traditional Chinese input method, check more information at
+ http://en.wikipedia.org/wiki/Cangjie_input_method .
+
+Package: ibus-table-cangjie-big
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: CangJie (big)
+ This package provide one input method: CaneJie (big).
+ .
+ CangJie (big) is a Traditional Chinese input method, check more information at
+ http://en.wikipedia.org/wiki/Cangjie_input_method .
+
+Package: ibus-table-cantonese
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Cantonese
+ This package provides one input methods: Cantonese
+
+Package: ibus-table-cantonhk
+Architecture: all
+Replaces: ibus-table-cantonese
+Conflicts: ibus-table-cantonese (<= 1.2.0.20100305-2)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Cantonhk
+ This package provides one input methods: Cantonhk
+
+Package: ibus-table-jyutping
+Architecture: all
+Replaces: ibus-table-cantonese
+Conflicts: ibus-table-cantonese (<= 1.2.0.20100305-2)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Jyutping
+ This package provides one input method: Jyutping
+ .
+ http://en.wikipedia.org/wiki/Jyutping
+
+Package: ibus-table-easy
+Architecture: all
+Depends: ${misc:Depends}, ibus-table-easy-big
+Description: ibus-table input method: Easy (dummy package)
+ This is a dummy package for stable upgrade.
+ .
+ You can safely remove it from your system.
+
+Package: ibus-table-easy-big
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Easy (big)
+ This package provide one input method: Easy (big).
+ .
+ Easy (big) is a Traditional Chinese input method.
+
+Package: ibus-table-erbi
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: ErBi
+ This package provide one input methods: ErBi
+ .
+ ErBi is a Simplified Chinese input method, check more information at
+ http://zh.wikipedia.org/wiki/%E4%BA%8C%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95 (in
+ Chinese).
+
+Package: ibus-table-erbi-qs
+Architecture: all
+Replaces: ibus-table-erbi
+Conflicts: ibus-tabel-erbi (<= 1.2.0.20090901-1)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: ErBi(QS)
+ This package provide one input methods: ErBi(QS)
+ .
+ ErBi is a Simplified Chinese input method, check more information at
+ http://zh.wikipedia.org/wiki/%E4%BA%8C%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95 (in
+ Chinese).
+
+Package: ibus-table-quick
+Architecture: all
+Depends: ${misc:Depends}, ibus-table-quick3, ibus-table-quick5, ibus-table-quick-classic
+Description: ibus-table input method: Quick (dummy package)
+ This is a dummy package for stable upgrade.
+ .
+ You can safely remove it from your system.
+
+Package: ibus-table-quick3
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Quick3
+ This package provide one input method: Quick3.
+ .
+ Quick3 is a Traditional Chinese input method.
+
+Package: ibus-table-quick5
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Quick5
+ This package provide one input method: Quick5.
+ .
+ Quick5 is a Traditional Chinese input method.
+
+Package: ibus-table-quick-classic
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Quick Classic
+ This package provide one input method: Quick Classic.
+ .
+ Quick Classic is a Traditional Chinese input method.
+
+Package: ibus-table-scj6
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Smart CangJie 6
+ This package provide one input method: Smart CangJie 6.
+ .
+ Smart CangJie 6 is a Traditional Chinese input method, check more information
+ at http://www.scj2000.com/ and http://www.scj2000.net/
+
+Package: ibus-table-stroke5
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Stroke5
+ This package provides one input method: Stroke5.
+
+Package: ibus-table-wubi
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Wubi
+ This package provide one input method: WuBi(version 86).
+ .
+ Wubi is a Chinese input method, check more information at
+ http://en.wikipedia.org/wiki/Wubi_method .
+
+Package: ibus-table-wu
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Wu
+ This package provides one input method: Wu.
+
+Package: ibus-table-xinhua
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Xinhua
+ This package provides one input method: Xinhua.
+
+Package: ibus-table-yong
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: YongMa
+ This package provide one input method: YongMa.
+ .
+ YongMa is a Chinese input method, check more information at
+ http://yong.uueasy.com/read.php?tid=218 .
+
+Package: ibus-table-zhengma
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Zhengma 
+ This package provides one input method: Zhengma.
+
+Package: ibus-table-zhuyin
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: ZhuYin(Bopomofo)
+ This package provides one input methods: ZhuYin(Bopomofo).
+
+Package: ibus-table-zhuyin-big
+Architecture: all
+Replaces: ibus-table-zhuyin
+Conflicts: ibus-table-zhuyin (<= 1.2.0.20090831-1)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: ZhuYin(Bopomofo)(big)
+ This package provides one input methods: ZhuYin(Bopomofo)(big).
+
+Package: ibus-table-ziranma
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ibus-table (>= 1.3.0)
+Description: ibus-table input method: Ziranma
+ This package provides one input method: Ziranma.
